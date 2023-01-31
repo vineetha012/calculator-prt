@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vineetha prt calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>CALCULATOR</h1>
+        <table id="calc-table">
+            <tr>
+                <td colspan="6">
+                    <!-- <button type="text" id="result" ></button> -->
+                    <!-- <button type="button" value="" id="result"></button> -->
+                    <input class="result"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="1" id class="val"  onclick="displayValue('1' )">1</button>                
+                </td>
+                <td>
+                    <button type="button" value="2"  class="val"  onclick="displayValue('2' )">2</button>                
+                </td>
+                <td>
+                    <button type="button" value="3"  class="val"  onclick="displayValue('3' )">3</button>                
+                </td>
+                <td>
+                    <button type="button" value="+"  class="val"  onclick="displayValue('+' )">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="4"  class="val"  onclick="displayValue('4' )" >4</button>
+                </td>
+
+                <td>
+                    <button type="button" value="5"  class="val"  onclick="displayValue('5' )">5</button>
+                </td>
+                <td>
+                    <button type="button" value="6"  class="val"  onclick="displayValue('6' )">6</button>
+                </td>
+                <td>
+                    <button type="button" value="-"  class="val"  onclick="displayValue('-' )">-</button>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="7"  class="val"  onclick="displayValue('7' )">7</button>
+                </td>
+                <td>
+                    <button type="button" value="8"  class="val"  onclick="displayValue('8' )">8</button>
+                </td>
+                <td>
+                    <button type="button" value="9"  class="val"  onclick="displayValue('9' )">9</button>
+                </td>
+                <td>
+                    <button type="button" value="*"  class="val"  onclick="displayValue('*' )">*</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="."  class="val"  onclick="displayValue('.' )">.</button>
+                </td>
+                <td>
+                    <button type="button" value="0"  class="val"  onclick="displayValue('0' )">0</button>
+                </td>
+                <td>
+                    <button type="button" value="=" class="btn" id="equalbtn"  onclick="calculateValue()">=</button>
+                </td>
+                <td>
+                    <button type="button" value="/" class="val"  onclick="displayValue('/' )">/</button>   
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="("  class="val"  onclick="displayValue('(' )">(</button>
+                </td>
+                <td>
+                    <button type="button" value=")"  class="val"  onclick="displayValue(')' )">)</button>
+                </td>
+                <td>
+                    <button type="button" value="X" id="clear"   onclick="removeLastValue()">X</button>
+                </td>
+                <td>
+                    <button type="button" value="C" id="clear"  onclick="clearAll()">C</button>                
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
